@@ -1,6 +1,6 @@
 # TCG X TicketCity
 
-##Gen AI Query Pipeline
+## Gen AI Query Pipeline
 
 Build a generative AI pipeline that automatically composes engaging event descriptions for ticket listings using an API (e.g., Google Gemini, OpenAI).
 
