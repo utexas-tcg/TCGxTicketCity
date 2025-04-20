@@ -1,4 +1,6 @@
-# Gen AI Query Pipeline
+# TCG X TicketCity
+
+##Gen AI Query Pipeline
 
 Build a generative AI pipeline that automatically composes engaging event descriptions for ticket listings using an API (e.g., Google Gemini, OpenAI).
 
@@ -53,13 +55,13 @@ import requests
 
 1. Ensure your API key is set:
    ```bash
-   export OPENAI_API_KEY="your_key_here"
+   client = genai.Client(api_key="your-api-key")
    ```
 2. Launch Jupyter and run the notebook cells in order.
 3. Review and refine prompt templates and parameters as needed.
 
 
-**TCG_x_TicketCity.ipynb**
+## Machine Learning Price-Forecasting Model
 
 ### Purpose
 Implement machine learning models to forecast optimal ticket pricing strategies for TicketCity based on historical sales and event features.
