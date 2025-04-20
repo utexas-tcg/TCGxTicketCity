@@ -58,4 +58,51 @@ import requests
 2. Launch Jupyter and run the notebook cells in order.
 3. Review and refine prompt templates and parameters as needed.
 
+
+**TCG_x_TicketCity.ipynb**
+
+### Purpose
+Implement machine learning models to forecast optimal ticket pricing strategies for TicketCity based on historical sales and event features.
+
+### Key Sections
+1. **Data Ingestion & Preprocessing**  
+   - Load `ticket_sales.csv` and related metadata.  
+   - Clean missing values and normalize numeric features.
+
+2. **Feature Engineering**  
+   - Create event-level features: type, date, venue occupancy, seasonality.  
+   - Encode categorical fields (e.g., event type, venue).
+
+3. **Modeling**  
+   - Train/test split by event date.  
+   - Fit models: Decision Tree, Random Forest, XGBoost.  
+   - Hyperparameter tuning with cross-validation.
+
+4. **Evaluation & Simulation**  
+   - Compute RMSE, MAE on test set.  
+   - Simulate pricing recommendations and visualize with matplotlib.
+
+### Prerequisites
+- Python ≥3.8
+- Jupyter Notebook ≥6.0
+- Packages: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `matplotlib`
+
+Install with:
+```bash
+pip install pandas numpy scikit-learn xgboost matplotlib
+```
+
+### Usage
+1. Place `ticket_sales.csv` in a `data/` folder.  
+2. Open and run each cell in order.  
+3. Review output charts and model metrics to choose the best strategy.
+
+### Output
+- Serialized model files (e.g., `.joblib`)  
+- Performance metrics summary  
+- Pricing recommendation plots
+
+### Next Steps
+- Integrate time-series models (e.g., LSTM).  
+- Deploy as an API for real-time pricing.
 ---
